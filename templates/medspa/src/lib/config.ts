@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Couture Med Spa",
+    tagline: "Rejuvenate Your Beauty Today",
+    phone: "(407) 555-1234",
+    phoneHref: "tel:+14075551234",
+    email: "info@couturemedspa.com",
+    address: "123 Luxury Lane, Winter Park, FL 32789",
+    city: "Winter Park",
+    serviceAreas: ["Winter Park, FL", "Ocoee, FL", "Oviedo, FL", "Lake Mary, FL", "Kissimmee, FL", "Nashua, NH", "Williamsburg, VA"],
+    license: "FL-MEDSPA-12345",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "sparkles", title: "Botox & Dysport", desc: "Smooth away wrinkles and fine lines for a youthful glow.", urgent: false },
+    { icon: "heart", title: "Weight Loss Program", desc: "Personalized plans and support to achieve your health goals.", urgent: false },
+    { icon: "droplets", title: "Dermal Fillers", desc: "Restore volume and contour for a naturally refreshed appearance.", urgent: false },
+    { icon: "scissors", title: "Laser Hair Removal", desc: "Achieve permanent hair reduction with advanced laser technology.", urgent: false },
+    { icon: "star", title: "Hydrafacial", desc: "Deeply cleanse, extract, and hydrate for glowing, healthy skin.", urgent: false },
+    { icon: "shield-check", title: "Memberships", desc: "Exclusive access to treatments and savings with our membership options.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "Winter Park, FL", stars: 5, text: "I had a Hydrafacial and Botox treatment at Couture Med Spa last month, and I'm absolutely thrilled with the results! My skin has never looked better, and the staff was incredibly professional and made me feel so comfortable. It was worth every penny for such a luxurious experience." },
+    { name: "Mark T.", location: "Ocoee, FL", stars: 5, text: "The weight loss program at Couture Med Spa has been life-changing for me. In just three months, I've lost 20 pounds and feel more energetic than ever. The team provided amazing support and guidance, making it easy to stick to the plan. Highly recommend their personalized approach!" },
+    { name: "Jessica R.", location: "Lake Mary, FL", stars: 5, text: "My lip filler experience at Couture Med Spa was fantastic. The nurse was so skilled and listened to exactly what I wanted, resulting in a natural yet noticeable enhancement. The clinic is beautiful and everyone is so friendly. I'll definitely be back for more treatments!" }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Board-Certified Practitioners", "Memberships Available", "Free Visia Skin Analysis", "Referral Rewards Program", "Advanced Laser Technology"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 },
+    { value: 5000, label: "Happy Clients", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Expert Practitioners", desc: "Our team consists of highly trained and certified medical professionals." },
+    { icon: "dollar-sign", title: "Membership Savings", desc: "Enjoy exclusive discounts and benefits with our flexible membership plans." },
+    { icon: "sparkles", title: "Luxury Experience", desc: "Indulge in a serene and upscale environment designed for your comfort." },
+    { icon: "shield-check", title: "Personalized Plans", desc: "We tailor every treatment to your unique needs and aesthetic goals." },
+    { icon: "star", title: "Cutting-Edge Technology", desc: "Utilizing the latest advancements in medical aesthetics for superior results." },
+    { icon: "heart", title: "Complimentary Consults", desc: "Receive a free Visia Skin Analysis to start your beauty journey." }
+  ],
 
-  formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+  formServiceOptions: ["Memberships", "Weight Loss Program", "Botox & Dysport", "Sculptra", "Kybella", "Lip Filler", "Dermal Fillers", "SkinVive", "NAD+", "Laser Hair Removal", "Laser Tattoo Removal", "Fractional Laser", "Leg Vein Removal", "IPL Photorejuvenation", "Emsculpt", "Vanquish Me", "Cellulite Treatment", "Red Light Therapy", "Couture Facials", "SkinPen Microneedling", "Hydrafacial", "Facial Products", "Cryo-Facial", "Nutrition & Weight Loss", "Weight Loss Shots", "Visia Skin Analysis"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
